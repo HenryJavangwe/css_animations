@@ -9,6 +9,7 @@ ul {
     height: 100px;
     text-align: center;
     vertical-align: middle;
+    transform: rotateZ(90deg);
 }
 .circle {
     background-color: rgb(252, 5, 219);
@@ -21,4 +22,5 @@ ul {
     border-radius: 50px;
     text-align: center;
     vertical-align: middle;
+    transform: translateX(260px) translateY(120px);
 }
