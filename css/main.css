@@ -92,7 +92,6 @@ ul {
          transform: translateX(1300px);
      }
  }
-
  @keyframes truck {
      from {
          transform: translateX(0);
