@@ -63,15 +63,41 @@ ul {
 }
 /* ELEMENTS TO ANIMATE */
 
-img {
-    width: 180px;
-    height: 150px;
-}
 .car {
     position: absolute;
     rotate: 180deg;
+    left: 0;
+    animation-name: car;
+    animation-duration: 15s;
+    width: 180px;
+    height: 150px;
 }
 .truck {
+    width: 180px;
+    height: 90px;
     position: absolute;
-   bottom: -160px;
+    bottom: -120px;
+    left: 1120px;
+    animation-name: truck;
+    animation-duration: 18s;
 }
+
+/* KEYFRAMES */
+
+ @keyframes car {
+     from {
+         transform: translateX(0);
+     }
+     to{
+         transform: translateX(1300px);
+     }
+ }
+
+ @keyframes truck {
+     from {
+         transform: translateX(0);
+     }
+     to {
+         transform: translateX(-1310px);
+     }
+ }
