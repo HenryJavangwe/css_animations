@@ -44,3 +44,20 @@ ul {
     background-color: salmon;
     transform: translateX(260px) translateY(120px);
 }
+
+/* ---- More practical animations -- animated land ---- */
+
+.sky,
+.grass {
+    height: 25vh;
+}
+.road {
+    padding-top: 80px;
+    height: 25vh;
+}
+
+.lines {
+    border-bottom: 20px dashed white;
+    width: 100%;
+    vertical-align: middle;
+}
