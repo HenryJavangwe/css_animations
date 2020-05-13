@@ -1,7 +1,16 @@
 ul {
     list-style-type: none;
 }
+
+/* ---- SQUARE ---- */
 .square {
+    width: 110px;
+    transition: transform .4s;
+}
+.square:hover {
+    transform: translateX(500px);
+}
+.first {
     background-color: rgb(255, 176, 7);
     padding: 40px 20px;
     color: black;
@@ -9,12 +18,14 @@ ul {
     height: 100px;
     text-align: center;
     vertical-align: middle;
-    transition: background 1s, transform 0.4s;/* we can specify where we want this to be added like i've done here. you simply separate by a comma */
+    transition: background 1s, transform 0.4s ;/* we can specify where we want this to be added like i've done here. you simply separate by a comma */
 }
-.square:hover {
+.first:hover {
     background-color: rgb(9, 236, 39);
-     transform: rotateZ(360deg);
+    transform: rotateZ(360deg)
 }
+
+/* ----- CIRCLE ----- */
 .circle {
     background-color: rgb(252, 5, 219);
     padding:40px 20px;
@@ -26,9 +37,10 @@ ul {
     border-radius: 50px;
     text-align: center;
     vertical-align: middle;
-    transform: translateX(260px) translateY(120px);
+    transition: background 1s, transform 2s ease;
 }
 
 .circle:hover {
     background-color: salmon;
+    transform: translateX(260px) translateY(120px);
 }
