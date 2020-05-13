@@ -9,7 +9,11 @@ ul {
     height: 100px;
     text-align: center;
     vertical-align: middle;
-    transform: rotateZ(90deg);
+    transition: background 1s, transform 0.4s;/* we can specify where we want this to be added like i've done here. you simply separate by a comma */
+}
+.square:hover {
+    background-color: rgb(9, 236, 39);
+     transform: rotateZ(360deg);
 }
 .circle {
     background-color: rgb(252, 5, 219);
@@ -23,4 +27,8 @@ ul {
     text-align: center;
     vertical-align: middle;
     transform: translateX(260px) translateY(120px);
+}
+
+.circle:hover {
+    background-color: salmon;
 }
