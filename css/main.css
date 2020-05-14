@@ -1,7 +1,18 @@
 ul {
     list-style-type: none;
+    justify-content: space-around;
+}
+li a {
+    color:white;
+    transition: color 3s, transform 2s;
+    text-decoration:none;
+    justify-content: space-around;
 }
 
+li a:hover {
+    color: red;
+    transform: scaleX(2) rotateZ(360deg);
+}
 /* ---- SQUARE ---- */
 .square {
     width: 110px;
@@ -53,7 +64,7 @@ ul {
 }
 .road {
     padding-top: 80px;
-    height: 30vh;
+    height: 35vh;
 }
 
 .lines {
@@ -67,10 +78,14 @@ ul {
     position: absolute;
     rotate: 180deg;
     left: 0;
-    animation-name: car;
-    animation-duration: 15s;
     width: 180px;
     height: 150px;
+    animation-name: car;
+    animation-duration: 8s;
+    /* animation-fill-mode: both; */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
 }
 .truck {
     width: 180px;
@@ -79,24 +94,46 @@ ul {
     bottom: -120px;
     left: 1120px;
     animation-name: truck;
-    animation-duration: 18s;
+    animation-duration: 15s;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+.bus {
+    width: 180px;
+    height: 90px;
+    animation-name: bus;
+    animation-duration: 12s;
+    animation-fill-mode: both;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 /* KEYFRAMES */
 
  @keyframes car {
      from {
-         transform: translateX(0);
+         transform: translateX(-300px);
      }
      to{
          transform: translateX(1300px);
      }
  }
+ @keyframes bus {
+    from {
+        transform: translate(-300px, 15px);
+    }
+    to{
+        transform: translate(1300px, 15px);
+    }
+}
  @keyframes truck {
      from {
-         transform: translateX(0);
+         transform: translateX(300px);
      }
      to {
-         transform: translateX(-1310px);
+         transform: translateX(-1300px);
      }
  }
